@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@screen md {
+    .home-md {
+      @apply rounded-md hover:bg-white hover:bg-opacity-10
+            text-slate-700 hover:text-[#FFC700] mr-3
+              px-8 py-2 bg-[#ffdd62] duration-700;
+      
+    }
+    .links-md {
+      @apply rounded-md hover:text-[#FFC700]
+            text-slate-700 px-8 py-2 duration-700;
+      
+    }
+  }
