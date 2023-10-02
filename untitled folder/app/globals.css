@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@screen md {
+    .home-md {
+      @apply rounded-md hover:bg-white hover:bg-opacity-10
+            text-slate-700 hover:text-[#FFC700] mr-3
+              px-8 py-2 bg-[#ffdd62] duration-700;
+      
+    }
+    .links-md {
+      @apply rounded-md hover:text-[#FFC700]
+            text-slate-700 px-8 py-2 duration-700;
+      
+    }
+  }
+
+.text-shadow {
+  text-shadow: 
+  /* #fff 1px 0px 30px; */
+  1px 1px 2px #fff,
+    0 0 1em #fff,
+    0 0 0.9em #fff;
+}
+
+.text-shadow-pink {
+  text-shadow: 
+  /* #fff 1px 0px 30px; */
+  1px 1px 2px #F13A62,
+  -1px -1px 2px #F13A62,
+    0 0 1em #F13A62,
+    0 0 0.9em #F13A62;
+}
