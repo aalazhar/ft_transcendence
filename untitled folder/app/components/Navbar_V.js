@@ -16,7 +16,7 @@ export default function Navbar_V() {
                     </div>
                     <div className='flex flex-col justify-between mt-6 h-[40vh]'>
                           <Link className="text-[#E58E27] mx-auto text-3xl" href={'/Profile'}><GoPerson/></Link>
-                          <Link className="text-[#E58E27] mx-auto text-3xl" href={'/'}><GoTrophy/></Link>
+                          <Link className="text-[#E58E27] mx-auto text-3xl" href={'/Rank'}><GoTrophy/></Link>
                           <Link className="text-[#E58E27] mx-auto text-3xl" href={'/chat'}><HiOutlineChatBubbleLeftEllipsis/></Link>
                           <Link className="text-[#E58E27] mx-auto text-3xl" href={'/'}><GiAchievement/></Link>
                           <Link className="text-[#E58E27] mx-auto text-3xl" href={'/'}><IoSettingsOutline/></Link>

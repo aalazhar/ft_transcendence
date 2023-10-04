@@ -1,8 +1,10 @@
+import Link from 'next/link';
 import React from 'react'
 import { AiOutlineSearch } from "react-icons/ai";
 
 
 export default function Hori_Navbar(pageName) {
+  const r_Route = JSON.stringify(pageName);
   return (
     // <div className="flex justify-between h-16 mb-2">
     //   <div className="flex">
@@ -22,17 +24,17 @@ export default function Hori_Navbar(pageName) {
     // </div>
     <div className='flex justify-between h-16 mx-6'>
       <div className='flex w-[50%] text-[#E58E27] justify-normal items-center'>
-        <h3 className='pr-8'>Game</h3>
-        <div className='flex'>
+        <h3 className='pr-8'>{r_Route}</h3>
+        <div className='relative'>
           <div>
-            <input className=' w-[300px] border rounded-md bg-transparent border-[#E58E27]'></input>
+            <input type='text' placeholder='Search' className='text-orange-100 pl-1 py-1 text-sm focus:outline-none w-[300px] border rounded-sm bg-transparent border-[#E58E27]'></input>
           </div>
-          <div className='text-2xl'><AiOutlineSearch/></div>
+          <div className='absolute top-1 left-[270px] text-2xl'><AiOutlineSearch/></div>
         </div>
       </div>
-      <div className='flex w-[50%] text-[#E58E27] justify-end items-center bg-white'>
-        <h3 className=''>Game</h3>
-        <div><AiOutlineSearch/></div>
+      <div className='flex w-[50%] text-[#E58E27] justify-end items-center'>
+        <Link href={'/'}><h1 className="text-[#E58E27] mr-8 text-shadow-pink font-sans text-lg font-bold">AREA 420</h1></Link>
+        <Link href={'/Game'} className=' py-2 px-6 bg-[#E58E27] text-sm text-slate-100 rounded-sm'>play</Link>
       </div>
     </div>
   )
